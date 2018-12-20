@@ -1,0 +1,46 @@
+from math import sqrt
+#class Registro():
+    
+#    def __init__(self, nome):
+#        self.nome = nome
+
+#    def printf(self):
+#        print("{} e são semelhantes".format(self.nome))
+
+#user1 = Registro(nome = "oliveira")
+#user2 = Registro(nome = "João")
+
+#class categoria_fil(Registro):
+ #   def __init__(self,nome, comedia, acao, guerra, policia):
+  #      Registro.__init__(self,nome)
+   #     self.comedia = comedia
+   #     self.acao = acao
+    #    self.guerra = guerra
+     #   self.policia = policia
+
+#film_user1 = {"comedia" :" 5" , "acao" : "4" , "guerra" : "2" , "policia" : "2" }
+#soma = ["comedia"]*["acao"] não ri dessa line, ué podia funfar kkkk era teste
+#print(soma)
+print("""
+1 - Acção
+2 - Comêdia
+3 - Guerra
+4 - Policial
+5 - Drama
+Avalia a sua categora favorita com 1 a 5""")
+c1 = int(input("Acção >_"))
+c2 = int(input("Comêdia >_"))
+c3 = int(input("Guerra >_"))
+c4 = int(input("Policial >_"))
+c5 = int(input("Drama >_"))
+print("Outro usuário")
+ca = int(input("Acção >_"))
+cb = int(input("Comêdia >_"))
+cc = int(input("Guerra >_"))
+cd = int(input("Policial >_"))
+ce = int(input("Drama >_"))
+semelhanca = sqrt((c1-ca)**2) + ((c2-cb)**2) + ((c3-cc)**2) + ((c4-cd)**2) + ((c5-ce)**2)
+if semelhanca >=5:
+    print("os usuários não têm gostos semelhantes")
+else:
+    print("usuários têm gostos semelhantes")
