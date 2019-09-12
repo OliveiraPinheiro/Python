@@ -1,5 +1,0 @@
-nome = input("Digite seu nome: ")
-hr = float(input("Quanto você ganha por hora ? "))
-mes = int (input("Número de horas trabalhadas no mês? "))
-cal = (hr*mes)
-print("o seu salário total é {}".format(cal))
